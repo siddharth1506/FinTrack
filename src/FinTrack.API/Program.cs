@@ -1,5 +1,8 @@
+using FinTrack.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddInfrastructure(builder.Configuration);  // ← NAYI LINE 2
 // Add services to the container.
 
 builder.Services.AddControllers();
